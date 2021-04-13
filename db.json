@@ -1,0 +1,159 @@
+{"movies" : [
+	{
+		"_id" : "1",
+		"title" : "Iron Man",
+		"synopsis" : "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+		"releaseDate" : "2008",
+		"genre" : [ "fantasy" ],
+		"duration" : 120,
+		"posterLink" : "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_.jpg",
+		"trailerLink" : "https://www.youtube.com/watch?v=EcZIzpvRTlU",
+		"directors" : [ {"id" : "1"} ],
+		"writers" : [ { "id" : "1","role" : "screenplay" },{ "id" : "3","role" : "characters" }],
+		"actors" : [ { "id" : "1", "role" : "Hogan" }, { "id" : "2", "role" : "Tony Stark" }]
+	},
+	{
+		"_id" : "2",
+		"title" : "Guardians of the Galaxy",
+		"synopsis" : "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.",
+		"releaseDate" : "2014",
+		"genre" : [ "fantasy" ],
+		"duration" : 180,
+		"posterLink" : "https://m.media-amazon.com/images/M/MV5BMjA3ODU4MDUyMl5BMl5BanBnXkFtZTgwNTE2OTkzMTE@._V1_.jpg",
+		"trailerLink" : "https://www.youtube.com/watch?v=HbB1LC_QyK0",
+		"directors" : [ {"id" : "2"} ],
+		"writers" : [ { "id" : "1","role" : "written by" },{ "id" : "2" ,"role" : "written by" }],
+		"actors" : [ { "id" :"3", "role" : "Peter Quill" }, { "id" : "4", "role" : "Gamora" }]
+	},
+	{
+		"_id" : "3",
+		"title" : "Titanic",
+		"synopsis" : "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+		"releaseDate" : "1997",
+		"genre" : [ "drama", "romance" ],
+		"duration" : 194,
+		"posterLink" : "https://www.wonderingblog.in/wp-content/uploads/2020/09/Titanic_1-698x1024.jpg",
+		"trailerLink" : "https://youtu.be/jUm88F3MEbQ",
+		"directors" : [ {"id" : "10"} ],
+		"writers" : [ { "id" : "1","role" : "written by" }],
+		"actors" : [ { "id" :"5", "role" : "Jack Dawson" }, { "id" : "6", "role" : "Rose Dewitt Bukater" }]
+	},
+	{
+		"_id" : "4",
+		"title" : "Aquaman",
+		"synopsis" : "An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son.",
+		"releaseDate" : "2018",
+		"genre" : [ "crime", "drama" ],
+		"duration" : 175,
+		"posterLink" : "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_.jpg",
+		"trailerLink" : "https://youtu.be/WDkg3h8PCVU",
+		"directors" : [ {"id" : "8"} ],
+		"writers" : [{"id" : "1", "role" : "screenplay"}, {"id" : "1", "role" : "story"} ],
+		"actors" : [ {"id" : "7", "role" : "Aquaman"} ,{"id" : "8", "role" : "Mera"}]
+	},
+	{
+		"_id" : "5",
+		"title" : "Thor",
+		"synopsis" : "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders. ",
+		"releaseDate" : "2011",
+		"genre" : [ "action", "adventure", "fantasy" ],
+		"duration" : 151,
+		"posterLink" : "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_.jpg",
+		"trailerLink" : "https://youtu.be/JOddp-nlNvQ",
+		"directors" : [ {"id" : "4"} ],
+		"writers" : [{"id" : "1", "role" : "screenplay"}, {"id" : "1", "role" : "story"} ],
+		"actors" : [ {"id" : "9", "role" : "Thor"} ,{"id" : "10", "role" : "Jane Foster"}]
+	}
+],
+"peoples" : [
+	{
+		"_id" : "1",
+		"lastname" : "FAVREAU",
+		"firstname" : "Jon",
+		"biography" : "Jon Favreau has progressed to strong mainstream visibility into the millennium and, after nearly two decades in the business, is still enjoying character stardom as well as earning notice as a writer/producer/director.",
+		"birthDate" : "19661019",
+		"deathDate" : "",
+		"picture" : "https://m.media-amazon.com/images/M/MV5BNjcwNzg4MjktNDNlMC00M2U1LWJmMjgtZTVkMmI4MDI2MTVmXkEyXkFqcGdeQXVyMjI4MDI0NTM@._V1_.jpg"
+	},
+	{
+		"_id" : "2",
+		"lastname" : "Downey Jr.",
+		"firstname" : "Robert",
+		"biography" : "Robert Downey Jr. has evolved into one of the most respected actors in Hollywood. With an amazing list of credits to his name, he has managed to stay new and fresh even after over four decades in the business.",
+		"birthDate" : "19650404",
+		"deathDate" : "",
+		"picture" : "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_.jpg"
+	},
+	{
+		"_id" : "3",
+		"lastname" : "Pratt",
+		"firstname" : "Chris",
+		"biography" : "Christopher Michael Pratt is an American film and television actor.",
+		"birthDate" : "19790621",
+		"deathDate" : "",
+		"picture" : "https://i.pinimg.com/originals/03/d9/d2/03d9d2723c64088c914041d57243eb4e.jpg"
+	},
+	{
+		"_id" : "4",
+		"lastname" : "Zaldana",
+		"firstname" : "Zoe",
+		"biography" : "Zoe Saldana was born on June 19, 1978 in Passaic, New Jersey, to Asalia Nazario and Aridio Saldaña. Her father was Dominican and her mother is Puerto Rican.",
+		"birthDate" : "19780619",
+		"deathDate" : "",
+		"picture" : "https://th.bing.com/th/id/OIP.6gVs82Nqgb_zQGCnZN3bIAHaLI?pid=ImgDet&rs=1"
+	},
+	{
+		"_id" : "5",
+		"lastname" : "DiCaprio",
+		"firstname" : "Leonardo",
+		"biography" : "Few actorws in the world have had a career quite as diverse as Leonardo DiCaprio's. DiCaprio has gone from relatively humble beginnings, as a supporting cast member.",
+		"birthDate" : "19741111",
+		"deathDate" : "",
+		"picture" : "https://th.bing.com/th/id/OIP.J92S0hFEMYln4siNIed0xQHaOG?w=181&h=345&c=7&o=5&pid=1.7"
+	},
+	{
+		"_id" : "6",
+		"lastname" : "Winslet",
+		"firstname" : "Kate",
+		"biography" : "Ask Kate Winslet what she likes about any of her characters, and the word 'ballsy' is bound to pop up at least once.",
+		"birthDate" : "19751005",
+		"deathDate" : "",
+		"picture" : "https://th.bing.com/th/id/OIP.HdkuQTpEiiQU5bsurZohiQAAAA?pid=ImgDet&rs=1"
+	},
+    {
+		"_id" : "7",
+		"lastname" : "Momoa",
+		"firstname" : "Jason",
+		"biography" : "Joseph Jason Namakaeha Momoa is an American actor.He headlined an eponymous 2018 film, with a second entry planned.",
+		"birthDate" : "19790801",
+		"deathDate" : "",
+		"picture" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Jason_Momoa_%2843055621224%29_%28cropped%29.jpg/800px-Jason_Momoa_%2843055621224%29_%28cropped%29.jpg"
+	},
+	{
+		"_id" : "8",
+		"lastname" : "Heard",
+		"firstname" : "Amber",
+		"biography" : "is an American actress. Heard first gained mainstream recognition for supporting roles in the action film Never Back Down (2008).",
+		"birthDate" : "19860422",
+		"deathDate" : "",
+		"picture" : "https://th.bing.com/th/id/OIP.qGy_vlLPOHmt_a68TO4GpAHaOG?pid=ImgDet&rs=1"
+	},
+    {
+		"_id" : "9",
+		"lastname" : "Hemsworth",
+		"firstname" : "Chris",
+		"biography" : "Christopher Hemsworth was born in Melbourne, Australia to Leonie Hemsworth (née van Os), an English teacher & Craig Hemsworth, a social-services counselor.",
+		"birthDate" : "19830811",
+		"deathDate" : "",
+		"picture" : "https://images-na.ssl-images-amazon.com/images/M/MV5BOTU2MTI0NTIyNV5BMl5BanBnXkFtZTcwMTA4Nzc3OA@@._V1_UY1200_CR85,0,630,1200_AL_.jpg"
+	},
+	{
+		"_id" : "10",
+		"lastname" : "Portman",
+		"firstname" : "Natalie",
+		"biography" : "Natalie Portman grew up on Long Island, New York, and began modeling at age 11. Her film debut was in The Professional (1994), and she was cast as Queen Amidala in the Star Wars prequels. While continuing her career, Portman earned a degree in psychology from Harvard University.",
+		"birthDate" : "19810609",
+		"deathDate" : "",
+		"picture" : "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTc5ODc3MDI5NTIzNDk4NjA3/natalie-portman-attends-the-2015-vanity-fair-oscar-party-hosted-by-graydon-carter-at-wallis-annenberg-center-for-the-performing-arts-on-february-22-2015-in-beverly-hills-california-photo-by-jon-kopalo.jpg"
+	}
+]}
