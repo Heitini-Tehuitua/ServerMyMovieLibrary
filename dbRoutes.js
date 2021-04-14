@@ -1,32 +1,19 @@
-
-
 const express = require('express')
-const axios = require("axios")
-router = express.Router()
 const cors = require('cors')
-
-const AllFunction = require('./ApiFunction')
+router = express.Router()
+const functions = require('./ApiFunction')
 
 router.use(cors())
 
 //---Home
-
-
 router.get('/', (req, res) => {
-    res.send("Accueil")
-    res.setHeader('Content-typer', 'application/json')
+    res.setHeader('content-type', 'application/json')
+    res.json("Accueil")
 })
 
-//---Actor
-
-router.get('/actors', AllFunction.GetActors)
-router.get('/actorDetails/:id', AllFunction.GetActor)
-
-//---Movie
-
-
-router.get('/movies', AllFunction.GetMovies)
-router.get('/movieDetails/:id', AllFunction.GetMovie)
-
+router.get('/movies', functions.GetMovies);
+router.get('/movieDetails?:id', functions.GetMovie);
+router.get('/peoples', functions.GetPeoples);
+router.get('/peopleDetails?:id', functions.GetPeople);
 
 module.exports = router;

@@ -1,8 +1,8 @@
 
 const express = require('express')
+const dbRouter = require('./dbRoutes')
 const app = express()
 const port = 3001
-const dbRouter = require('./dbRoutes')
 
 
 app.use("/api", dbRouter)

@@ -1,48 +1,70 @@
-const db = require('./db.json')
+const connectionString = "mongodb://127.0.0.1:27017/MyMovieLibraryDB"
+// const connectionString = process.env.SERVER_ADDRESS  + ':' + process.env.SERVER_PORT + '/' + process.env.DATABASE_NAME
+// DB connection
+const Schema = require('./MongooseSchema')
 
 module.exports = {
-    GetMovies : function (req, res){
-        res.send(db.movies)
+    GetMovies : function(req, res) {
+        Schema.Movies.find({}, function(err, movie) {
+            if (err) {
+                console.log("Error while getting object");
+                res.send(err);
+            }
+            console.log("Movie : ", movie);
+            res.json(movie)
+        });
+        console.log('Variable env : ' + process.env)
     },
-    GetMovie : function(req, res){
-        const id = req.params.id;
-        const selectMovie = db.movies.filter(x => x._id === id)
-        res.send(selectMovie)
+    GetMovie : function(req, res) {
+        Schema.Movies.findById(req.query.id, function(err, movies) {
+            if (err) {
+                console.log("Error while getting object");
+                res.send(err);
+            }
+            console.log("Movie : ", movies);
+            res.json(movies)
+        });
     },
-    GetActors : function(req, res){
-        const actorsDB = [];
-
-        db.movies.map(movie =>
-            movie.actors.map( actor =>
-
-            db.peoples.map(people => people._id = actor.id?(
-                actorsDB.push(people)
-            ) : null ))
-        )
-
-        const actors = Array.from(new Set(actorsDB));
-        res.send(actors)
+    GetPeoples : function(req, res) {
+        Schema.Peoples.find({}, function(err, peoples) {
+            if (err) {
+                console.log("Error while getting object");
+                res.send(err);
+            }
+            console.log("Actor : ", peoples);
+            res.json(peoples)
+        });
     },
-    GetActor : function(req, res){
-        const id = req.params.id;
-        const selectActor = db.peoples.filter(x => x._id === id)
-        res.send(selectActor)
-    },
-    GetDirectors : function(res, req){
-        const directorsDB = [];
-
-        db.movies.map(movie =>
-            movie.directors.map( director =>
-
-            db.peoples.map(people => people._id = director.id?(
-                directorsDB.push(people)
-            ) : null ))
-        )
-
-        const directors = Array.from(new Set(directorsDB));
-        res.send(directors)
-
+    GetPeople : function(req, res) {
+        Schema.Peoples.findById(req.query.id, function(err, people) {
+            if (err) {
+                console.log("Error while getting object");
+                res.send(err);
+            }
+            console.log("Movie : ", people);
+            res.json(people)
+        });
     }
 }
+// GetActors : function(req, res){
+//     Schema.Movies.find({}, function(err, movie) {
+//         Schema.Peoples.find({}, function(err, people) {
+//             let movies = movies;
+//             let peoples = peoples;
+
+//             movies.map(movie =>
+//                 movie.actors.map(actor =>
+//                     peoples.map(people =>
+//                         people._id === actor.id?(
+//                             res.
+//                         ) : null);
+//                     )
+//                 )
+//             )
+
+//         });
+//     });
+// }
+    
 
 
