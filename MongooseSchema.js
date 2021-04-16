@@ -9,9 +9,8 @@ mongoose.connect(connectionString, {
 });
 
 const actorSchema = new mongoose.Schema({
-    _id : String,
-    lastname : String,
-    firstname : String
+    id : String,
+    role : String
 });
 
 const movieSchema = new mongoose.Schema({
@@ -42,17 +41,32 @@ const peopleSchema = new mongoose.Schema({
     collection : 'Peoples'
 });
 
+const userSchema = new mongoose.Schema({
+    _id : mongoose.Schema.Types.ObjectId,
+    lastname : String, 
+    firstname : String, 
+    email : String,
+    birthdate : String,
+    telephone : Number,
+    genre : String,
+    password : String
+}, {
+    collection : 'users'
+});
+
 // Theaters
 const theaterSchema = new mongoose.Schema({
     name: String, 
     address: String
 });
-const Theathers = mongoose.model('Theathers', theaterSchema);
+
 //Theathers.create({ name: 'Concorde', address: 'Papeete'});
 
 let movies = {};
 
 module.exports = {
     Movies : mongoose.model('Movies', movieSchema),
-    Peoples : mongoose.model('Peoples', peopleSchema)
+    Peoples : mongoose.model('Peoples', peopleSchema),
+    Users : mongoose.model('Users', userSchema),
+    Theaters : mongoose.model('Theathers', theaterSchema)
 }
