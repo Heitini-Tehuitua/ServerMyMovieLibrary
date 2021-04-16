@@ -26,7 +26,7 @@ const movieSchema = new mongoose.Schema({
     actors : [actorSchema],
     writers : Array
 }, {
-    collection : 'Movies'
+    collection : 'movies'
 });
 
 const peopleSchema = new mongoose.Schema({
@@ -38,7 +38,7 @@ const peopleSchema = new mongoose.Schema({
     deathdate : String,
     picture : String,
 }, {
-    collection : 'Peoples'
+    collection : 'peoples'
 });
 
 const userSchema = new mongoose.Schema({
@@ -61,8 +61,6 @@ const theaterSchema = new mongoose.Schema({
 });
 
 //Theathers.create({ name: 'Concorde', address: 'Papeete'});
-
-let movies = {};
 
 module.exports = {
     Movies : mongoose.model('Movies', movieSchema),

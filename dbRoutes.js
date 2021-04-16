@@ -1,26 +1,31 @@
 const express = require('express')
 const cors = require('cors')
 router = express.Router()
-const functions = require('./ApiFunction')
+const createFunctions = require('./functions/CreateFunction')
+const readFunctions = require('./functions/ReadFunction')
+const updateFunctions = require('./functions/updateFunction')
+const deleteFunctions = require('./functions/deleteFunction')
 
 router.use(cors())
 router.use(express.urlencoded())
 
-//---Home
-router.get('/', functions.Home)
+// Create
+router.post('/peoples/insert', createFunctions.InsertPeople)
 
-router.get('/movies', functions.GetMovies)
-router.get('/movieDetails?:id', functions.GetMovie)
-router.get('/movieRandom?', functions.GetRandomMovie)
-router.post('/movies/update', functions.UpdateMovie)
-router.get('/peoples', functions.GetPeoples)
-router.get('/peopleDetails?:id', functions.GetPeople)
-router.post('/peoples/update', functions.UpdatePeople)
-router.post('/peoples/insert', functions.InsertPeople)
-router.post('/peoples/delete', functions.DeletePeople)
+//---Read
+router.get('/', readFunctions.GetMovies)
+router.get('/movies', readFunctions.GetMovies)
+router.get('/movieDetails?:id', readFunctions.GetMovie)
+router.get('/movieRandom?', readFunctions.GetRandomMovie)
+router.get('/peoples', readFunctions.GetPeoples)
+router.get('/peopleDetails?:id', readFunctions.GetPeople)
+router.get("/users", readFunctions.GetUsers)
 
-router.get("/users", functions.GetUsers)
-router.post("/users/insert", functions.InsertTheater)
-router.post("/users/update", functions.UpdateTheater)
-router.post("/users/delete", functions.DeleteTheater)
+//Update
+router.post('/movies/update', updateFunctions.UpdateMovie)
+router.post('/peoples/update', updateFunctions.UpdatePeople)
+
+//Delete
+router.post('/peoples/delete', deleteFunctions.DeletePeople)
+
 module.exports = router;
