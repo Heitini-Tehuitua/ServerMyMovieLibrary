@@ -5,28 +5,28 @@ const Schema = require('../MongooseSchema')
 module.exports = {
     UpdateMovie : function(req, res) {
         res.setHeader('content-type', 'application/json')
-        Schema.Movies.updateOne({_id : req.body.id},
-            {
-                title : req.body.title,
-                synopsis : req.body.synopsis,
-                releaseDate : req.body.releaseDate,
-                genre : req.body.genre,
-                duration : req.body.duration,
-                posterLink : req.body.posterLink,
-                trailerLink : req.body.trailerLink,
-                directors : req.body.directors,
-                writers : req.body.writers,
-                actors : req.body.actors
-            },
-            function(err, result){
-                if(err){
-                    res.send({error : "ERROR_UPDATE"})
-                } else {
-                    res.send({response : "REQUEST_ACCEPT"})     
-                }
-            }
-        )
-       console.log("OK : " + req.body.actors[0])
+        // Schema.Movies.updateOne({_id : req.body.id},
+        //     {
+        //         title : req.body.title,
+        //         synopsis : req.body.synopsis,
+        //         releaseDate : req.body.releaseDate,
+        //         genre : req.body.genre,
+        //         duration : req.body.duration,
+        //         posterLink : req.body.posterLink,
+        //         trailerLink : req.body.trailerLink,
+        //         directors : req.body.directors,
+        //         writers : req.body.writers,
+        //         actors : req.body.actors
+        //     },
+        //     function(err, result){
+        //         if(err){
+        //             res.send({error : "ERROR_UPDATE"})
+        //         } else {
+        //             res.send({response : "REQUEST_ACCEPT"})     
+        //         }
+        //     }
+        // )
+       console.log("OK : " + req.body.genre)
         
     },
     UpdatePeople : function(req, res) {

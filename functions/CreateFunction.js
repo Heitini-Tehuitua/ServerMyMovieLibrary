@@ -23,7 +23,7 @@ module.exports = {
                 }
             }
         )
-        console.log(req.body.lastname)
+        console.log(req.body.birthDate)
     }
 }
     

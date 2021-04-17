@@ -26,7 +26,7 @@ const movieSchema = new mongoose.Schema({
     actors : [actorSchema],
     writers : Array
 }, {
-    collection : 'movies'
+    collection : 'Movies'
 });
 
 const peopleSchema = new mongoose.Schema({
@@ -38,7 +38,7 @@ const peopleSchema = new mongoose.Schema({
     deathdate : String,
     picture : String,
 }, {
-    collection : 'peoples'
+    collection : 'Peoples'
 });
 
 const userSchema = new mongoose.Schema({
